@@ -331,7 +331,37 @@ public class UnknownCompositionMaterials {
                 .flags(FLAMMABLE)
                 .build();
 
-        // Free IDs 1560-1575
+        ThermalCrackedHeavyFuel = Material.builder(1560, gregtechId("thermal_cracked_heavy_fuel"))
+                .liquid(new FluidBuilder()
+                        .temperature(775)
+                        .customStill())
+                .color(0xD66A22)
+                .flags(FLAMMABLE)
+                .build();
+
+        ThermalCrackedLightFuel = Material.builder(1561, gregtechId("thermal_cracked_light_fuel"))
+                .liquid(new FluidBuilder()
+                        .temperature(775)
+                        .customStill())
+                .color(0xE89928)
+                .flags(FLAMMABLE)
+                .build();
+
+        ThermalCrackedNaphtha = Material.builder(1562, gregtechId("thermal_cracked_naphtha"))
+                .liquid(new FluidBuilder()
+                        .temperature(775)
+                        .customStill())
+                .color(0xF0B23A)
+                .flags(FLAMMABLE)
+                .build();
+
+        ThermalCrackedGas = Material.builder(1563, gregtechId("thermal_cracked_gas"))
+                .gas(new FluidBuilder().temperature(775))
+                .color(0xD8A36A)
+                .flags(FLAMMABLE)
+                .build();
+
+        // Free IDs 1564-1575
 
         LPG = Material.builder(1576, gregtechId("lpg"))
                 .liquid(new FluidBuilder().customStill())

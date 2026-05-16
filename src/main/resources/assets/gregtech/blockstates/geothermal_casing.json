@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "active=false,variant=thermoelectric_casing": {
+      "model": "minecraft:cube_all",
+      "textures": {
+        "all": "gregtech:blocks/casings/solid/machine_casing_heatproof"
+      }
+    },
+    "active=true,variant=thermoelectric_casing": {
+      "model": "minecraft:cube_all",
+      "textures": {
+        "all": "gregtech:blocks/casings/firebox/machine_casing_firebox_titanium_active"
+      }
+    }
+  }
+}

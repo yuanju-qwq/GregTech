@@ -248,5 +248,55 @@ public class HigherDegreeMaterials {
                 .color(0x1A001A).iconSet(METALLIC)
                 .flags(DISABLE_DECOMPOSITION, NO_SMELTING)
                 .build();
+
+        // ==================== Nether Geothermal Materials ====================
+
+        MoltenNetherrack = Material.builder(2550, gregtechId("molten_netherrack"))
+                .liquid(new FluidBuilder()
+                        .temperature(1473)
+                        .luminosity(10))
+                .color(0xB83A18).iconSet(FLUID)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
+
+        GeothermalVapor = Material.builder(2551, gregtechId("geothermal_vapor"))
+                .gas(new FluidBuilder().temperature(523))
+                .color(0xB6A66B).iconSet(FLUID)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
+
+        CooledLavaSlurry = Material.builder(2552, gregtechId("cooled_lava_slurry"))
+                .liquid(new FluidBuilder()
+                        .temperature(473)
+                        .customStill())
+                .color(0x5E3B2F).iconSet(FLUID)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
+
+        OrganicWorkingFluid = Material.builder(2553, gregtechId("organic_working_fluid"))
+                .liquid(new FluidBuilder()
+                        .temperature(293)
+                        .customStill())
+                .color(0x70A878).iconSet(FLUID)
+                .flags(DISABLE_DECOMPOSITION, FLAMMABLE)
+                .build();
+
+        HotOrganicVapor = Material.builder(2554, gregtechId("hot_organic_vapor"))
+                .gas(new FluidBuilder().temperature(393))
+                .color(0x9ED091).iconSet(FLUID)
+                .flags(DISABLE_DECOMPOSITION, FLAMMABLE)
+                .build();
+
+        VolcanicAsh = Material.builder(2555, gregtechId("volcanic_ash"))
+                .dust(1)
+                .color(0x5B544D).iconSet(ROUGH)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
+
+        MagmaResidue = Material.builder(2556, gregtechId("magma_residue"))
+                .dust(1)
+                .color(0x6A3B2B).iconSet(ROUGH)
+                .flags(DISABLE_DECOMPOSITION)
+                .build();
     }
 }

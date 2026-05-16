@@ -580,6 +580,62 @@ public final class RecipeMaps {
             .sound(GTSoundEvents.FIRE)
             .build();
 
+    @ZenProperty
+    public static final RecipeMap<SimpleRecipeBuilder> GEOTHERMAL_CRACKING_RECIPES = new RecipeMapBuilder<>(
+            "geothermal_cracker",
+            new SimpleRecipeBuilder())
+            .itemInputs(1)
+            .fluidInputs(2)
+            .fluidOutputs(2)
+            .ui(CrackerUnitUI::new)
+            .sound(GTSoundEvents.FIRE)
+            .build();
+
+    @ZenProperty
+    public static final RecipeMap<SimpleRecipeBuilder> GEOTHERMAL_EVAPORATOR_RECIPES = new RecipeMapBuilder<>(
+            "geothermal_evaporator",
+            new SimpleRecipeBuilder())
+            .fluidInputs(2)
+            .fluidOutputs(2)
+            .uiBuilder(b -> b
+                    .fluidSlotOverlay(GTGuiTextures.FURNACE_OVERLAY_2, false)
+                    .fluidSlotOverlay(GTGuiTextures.DARK_CANISTER_OVERLAY, true)
+                    .progressBar(GTGuiTextures.PROGRESS_BAR_ARROW_MULTIPLE))
+            .sound(GTSoundEvents.BOILER)
+            .build();
+
+    @ZenProperty
+    public static final RecipeMap<SimpleRecipeBuilder> FLASH_SEPARATOR_RECIPES = new RecipeMapBuilder<>(
+            "flash_separator",
+            new SimpleRecipeBuilder())
+            .itemOutputs(2)
+            .fluidInputs(1)
+            .fluidOutputs(2)
+            .uiBuilder(b -> b
+                    .fluidSlotOverlay(GTGuiTextures.FURNACE_OVERLAY_2, false)
+                    .itemSlotOverlay(GTGuiTextures.DUST_OVERLAY, true)
+                    .fluidSlotOverlay(GTGuiTextures.DARK_CANISTER_OVERLAY, true)
+                    .progressBar(GTGuiTextures.PROGRESS_BAR_ARROW_MULTIPLE))
+            .sound(GTSoundEvents.BOILER)
+            .build();
+
+    @ZenProperty
+    public static final RecipeMap<SimpleRecipeBuilder> NETHERRACK_CRACKING_RECIPES = new RecipeMapBuilder<>(
+            "netherrack_cracking",
+            new SimpleRecipeBuilder())
+            .itemInputs(1)
+            .itemOutputs(3)
+            .fluidInputs(1)
+            .fluidOutputs(1)
+            .uiBuilder(b -> b
+                    .itemSlotOverlay(GTGuiTextures.FURNACE_OVERLAY_1, false)
+                    .itemSlotOverlay(GTGuiTextures.DUST_OVERLAY, true)
+                    .fluidSlotOverlay(GTGuiTextures.FURNACE_OVERLAY_2, false)
+                    .fluidSlotOverlay(GTGuiTextures.DARK_CANISTER_OVERLAY, true)
+                    .progressBar(GTGuiTextures.PROGRESS_BAR_ARROW_MULTIPLE))
+            .sound(GTSoundEvents.FIRE)
+            .build();
+
     /**
      * Example:
      *
@@ -2019,6 +2075,37 @@ public final class RecipeMaps {
                     .fluidSlotOverlay(GTGuiTextures.CENTRIFUGE_OVERLAY, false)
                     .progressBar(GTGuiTextures.PROGRESS_BAR_GAS_COLLECTOR))
             .sound(GTSoundEvents.TURBINE)
+            .allowEmptyOutputs()
+            .generator()
+            .disableJeiOverclockButton()
+            .build();
+
+    @ZenProperty
+    public static final RecipeMap<FuelRecipeBuilder> NETHER_STEAM_TURBINE_FUELS = new RecipeMapBuilder<>(
+            "nether_steam_turbine",
+            new FuelRecipeBuilder())
+            .fluidInputs(1)
+            .fluidOutputs(1)
+            .uiBuilder(b -> b
+                    .fluidSlotOverlay(GTGuiTextures.DARK_CANISTER_OVERLAY, false)
+                    .progressBar(GTGuiTextures.PROGRESS_BAR_GAS_COLLECTOR))
+            .sound(GTSoundEvents.TURBINE)
+            .allowEmptyOutputs()
+            .generator()
+            .disableJeiOverclockButton()
+            .build();
+
+    @ZenProperty
+    public static final RecipeMap<FuelRecipeBuilder> THERMOELECTRIC_GENERATOR_FUELS = new RecipeMapBuilder<>(
+            "thermoelectric_generator",
+            new FuelRecipeBuilder())
+            .fluidInputs(2)
+            .fluidOutputs(2)
+            .uiBuilder(b -> b
+                    .fluidSlotOverlay(GTGuiTextures.FURNACE_OVERLAY_2, false)
+                    .fluidSlotOverlay(GTGuiTextures.DARK_CANISTER_OVERLAY, true)
+                    .progressBar(GTGuiTextures.PROGRESS_BAR_ARROW_MULTIPLE))
+            .sound(GTSoundEvents.ELECTROLYZER)
             .allowEmptyOutputs()
             .generator()
             .disableJeiOverclockButton()

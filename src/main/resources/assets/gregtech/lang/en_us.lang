@@ -2315,6 +2315,10 @@ gregtech.material.lightly_hydrocracked_gas=Lightly Hydro-Cracked Refinery Gas
 gregtech.material.severely_hydrocracked_gas=Severely Hydro-Cracked Refinery Gas
 gregtech.material.lightly_steamcracked_gas=Lightly Steam-Cracked Refinery Gas
 gregtech.material.severely_steamcracked_gas=Severely Steam-Cracked Refinery Gas
+gregtech.material.thermal_cracked_heavy_fuel=Thermal-Cracked Heavy Fuel
+gregtech.material.thermal_cracked_light_fuel=Thermal-Cracked Light Fuel
+gregtech.material.thermal_cracked_naphtha=Thermal-Cracked Naphtha
+gregtech.material.thermal_cracked_gas=Thermal-Cracked Refinery Gas
 gregtech.material.hydrocracked_ethane=Hydro-Cracked Ethane
 gregtech.material.hydrocracked_ethylene=Hydro-Cracked Ethylene
 gregtech.material.hydrocracked_propene=Hydro-Cracked Propene
@@ -2501,6 +2505,13 @@ gregtech.material.fireclay=Fireclay
 gregtech.material.diorite=Diorite
 gregtech.material.water_coolant=Coolant
 gregtech.material.hot_water_coolant=Hot Coolant
+gregtech.material.molten_netherrack=Molten Netherrack
+gregtech.material.geothermal_vapor=Geothermal Vapor
+gregtech.material.cooled_lava_slurry=Cooled Lava Slurry
+gregtech.material.organic_working_fluid=Organic Working Fluid
+gregtech.material.hot_organic_vapor=Hot Organic Vapor
+gregtech.material.volcanic_ash=Volcanic Ash
+gregtech.material.magma_residue=Magma Residue
 
 # Fourth Degree Materials
 gregtech.material.red_alloy=Red Alloy
@@ -2716,6 +2727,10 @@ recipemap.chemical_reactor.name=Chemical Reactor
 recipemap.large_chemical_reactor.name=Large Chemical Reactor
 recipemap.distillation_tower.name=Distillation Tower
 recipemap.cracker.name=Oil Cracking Unit
+recipemap.geothermal_cracker.name=Geothermal Cracker
+recipemap.geothermal_evaporator.name=Geothermal Evaporator
+recipemap.flash_separator.name=Flash Separator
+recipemap.netherrack_cracking.name=Netherrack Cracking Furnace
 recipemap.pyrolyse_oven.name=Pyrolyse Oven
 recipemap.wiremill.name=Wiremill
 recipemap.bender.name=Metal Bender
@@ -2735,6 +2750,8 @@ recipemap.gas_turbine.name=Gas Fuels
 recipemap.steam_turbine.name=Steam Fuels
 recipemap.high_pressure_steam_turbine.name=High Pressure Steam Fuels
 recipemap.supercritical_steam_turbine.name=Supercritical Steam Fuels
+recipemap.nether_steam_turbine.name=Nether Steam Turbine Fuels
+recipemap.thermoelectric_generator.name=Thermoelectric Generator Fuels
 recipemap.exhaust_gas_turbine.name=Exhaust Gas Fuels
 recipemap.semi_fluid_generator.name=Semi Fluid Fuels
 recipemap.plasma_generator.name=Plasma Fuels
@@ -3229,6 +3246,10 @@ tile.multiblock_casing.extreme_engine_intake.name=Extreme Engine Intake Casing
 tile.multiblock_casing.grate.name=Grate Machine Casing
 tile.multiblock_casing.assembly_control.name=Assembly Control Casing
 tile.multiblock_casing.assembly_line.name=Assembly Line Casing
+
+# Geothermal casing blocks
+tile.geothermal_casing.thermoelectric_casing.name=Thermoelectric Component Casing
+tile.geothermal_casing.thermoelectric_casing.tooltip=Designed to survive closed-loop lava heat exchange
 
 # Fusion casing blocks
 tile.fusion_casing.superconductor_coil.name=Superconducting Coil Block

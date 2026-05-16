@@ -2311,6 +2311,10 @@ gregtech.material.lightly_hydrocracked_gas=轻度加氢裂化炼油气
 gregtech.material.severely_hydrocracked_gas=重度加氢裂化炼油气
 gregtech.material.lightly_steamcracked_gas=轻度蒸汽裂化炼油气
 gregtech.material.severely_steamcracked_gas=重度蒸汽裂化炼油气
+gregtech.material.thermal_cracked_heavy_fuel=热裂化重燃油
+gregtech.material.thermal_cracked_light_fuel=热裂化轻燃油
+gregtech.material.thermal_cracked_naphtha=热裂化石脑油
+gregtech.material.thermal_cracked_gas=热裂化炼油气
 gregtech.material.hydrocracked_ethane=加氢裂化乙烷
 gregtech.material.hydrocracked_ethylene=加氢裂化乙烯
 gregtech.material.hydrocracked_propene=加氢裂化丙烯
@@ -2497,6 +2501,13 @@ gregtech.material.fireclay=耐火粘土
 gregtech.material.diorite=闪长岩
 gregtech.material.water_coolant=冷却液
 gregtech.material.hot_water_coolant=热冷却液
+gregtech.material.molten_netherrack=熔融地狱岩
+gregtech.material.geothermal_vapor=地热蒸汽
+gregtech.material.cooled_lava_slurry=冷却岩浆
+gregtech.material.organic_working_fluid=有机工质
+gregtech.material.hot_organic_vapor=高温有机蒸汽
+gregtech.material.volcanic_ash=火山灰
+gregtech.material.magma_residue=岩浆残渣
 
 # Fourth Degree Materials
 gregtech.material.red_alloy=红色合金
@@ -2712,6 +2723,10 @@ recipemap.chemical_reactor.name=化学反应釜
 recipemap.large_chemical_reactor.name=大型化学反应釜
 recipemap.distillation_tower.name=蒸馏塔
 recipemap.cracker.name=石油裂化机
+recipemap.geothermal_cracker.name=地热裂化炉
+recipemap.geothermal_evaporator.name=地热蒸发器
+recipemap.flash_separator.name=闪蒸分离塔
+recipemap.netherrack_cracking.name=地狱岩裂解炉
 recipemap.pyrolyse_oven.name=热解炉
 recipemap.wiremill.name=线材轧机
 recipemap.bender.name=卷板机
@@ -2731,6 +2746,8 @@ recipemap.gas_turbine.name=燃气轮机燃料
 recipemap.steam_turbine.name=蒸汽轮机燃料
 recipemap.high_pressure_steam_turbine.name=高压蒸汽轮机燃料
 recipemap.supercritical_steam_turbine.name=超临界蒸汽轮机燃料
+recipemap.nether_steam_turbine.name=下界蒸汽涡轮燃料
+recipemap.thermoelectric_generator.name=热电转换器燃料
 recipemap.exhaust_gas_turbine.name=尾气轮机燃料
 recipemap.semi_fluid_generator.name=半流质燃料
 recipemap.plasma_generator.name=等离子燃料
@@ -3225,6 +3242,10 @@ tile.multiblock_casing.extreme_engine_intake.name=极限引擎进气机械方块
 tile.multiblock_casing.grate.name=栅格机械方块
 tile.multiblock_casing.assembly_control.name=装配线控制外壳
 tile.multiblock_casing.assembly_line.name=装配线外壳
+
+# Geothermal casing blocks
+tile.geothermal_casing.thermoelectric_casing.name=热电元件外壳
+tile.geothermal_casing.thermoelectric_casing.tooltip=用于承受封闭岩浆热交换
 
 # Fusion casing blocks
 tile.fusion_casing.superconductor_coil.name=超导线圈方块

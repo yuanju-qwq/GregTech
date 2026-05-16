@@ -147,6 +147,7 @@ public class MetaBlocks {
     public static BlockComputerCasing COMPUTER_CASING;
     public static BlockBatteryPart BATTERY_BLOCK;
     public static BlockTankCasing TANK_CASING;
+    public static BlockGeothermalCasing GEOTHERMAL_CASING;
 
     // Forge of the Gods blocks
     public static BlockGodforgeCasing GODFORGE_CASING;
@@ -286,6 +287,8 @@ public class MetaBlocks {
         BATTERY_BLOCK.setRegistryName("battery_block");
         TANK_CASING = new BlockTankCasing();
         TANK_CASING.setRegistryName("tank_casing");
+        GEOTHERMAL_CASING = new BlockGeothermalCasing();
+        GEOTHERMAL_CASING.setRegistryName("geothermal_casing");
 
         // Forge of the Gods blocks
         GODFORGE_CASING = new BlockGodforgeCasing();
@@ -504,6 +507,7 @@ public class MetaBlocks {
         registerItemModel(COMPUTER_CASING);
         registerItemModel(BATTERY_BLOCK);
         registerItemModel(TANK_CASING);
+        GEOTHERMAL_CASING.onModelRegister();
         GODFORGE_CASING.onModelRegister();
         GODFORGE_GLASS.onModelRegister();
         registerItemModel(ASPHALT);

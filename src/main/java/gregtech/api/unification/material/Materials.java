@@ -608,6 +608,10 @@ public class Materials {
     public static Material SeverelyHydroCrackedGas;
     public static Material LightlySteamCrackedGas;
     public static Material SeverelySteamCrackedGas;
+    public static Material ThermalCrackedHeavyFuel;
+    public static Material ThermalCrackedLightFuel;
+    public static Material ThermalCrackedNaphtha;
+    public static Material ThermalCrackedGas;
     public static Material HydroCrackedEthane;
     public static Material HydroCrackedEthylene;
     public static Material HydroCrackedPropene;
@@ -786,6 +790,17 @@ public class Materials {
     public static Material Diorite;
     public static Material WaterCoolant;
     public static Material HotWaterCoolant;
+
+    /**
+     * Nether geothermal materials.
+     */
+    public static Material MoltenNetherrack;
+    public static Material GeothermalVapor;
+    public static Material CooledLavaSlurry;
+    public static Material OrganicWorkingFluid;
+    public static Material HotOrganicVapor;
+    public static Material VolcanicAsh;
+    public static Material MagmaResidue;
 
     /**
      * Fourth Degree Materials
